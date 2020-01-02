@@ -1,0 +1,407 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+#logo {
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 115px;
+    height: 115px;
+    margin-bottom: 10px;
+}
+
+#ham-icon {
+    float: right;
+    margin-top: 80px;
+    margin-right: 25px;
+    width: 38px;
+    height: 23px;
+    cursor: pointer;
+}
+
+#overlay-menu {
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+#hamburger-menu {
+    margin-top: 25px;
+    border-top-left-radius: 25px;
+    background-color: #B99C28;
+    margin-left: 60%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hamburger-menu-item {
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #1F3051;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hamburger-menu-item > a:hover {
+    color: white;
+}
+
+#menu {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B99C28;
+}
+
+#contact-background {
+    background-color: #1F3051;
+}
+
+#contact-head {
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 16px;
+    color: #B99C28;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.form-input > p {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-left: 45px;
+}
+
+#textarea-head {
+    margin-top: 20px;
+    margin-right: 65px;
+}
+
+input,
+textarea,
+button {
+    width: 70%;
+    height: 30px;
+    margin-left: 40px;
+    font-family: 'Lato';
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    padding-top: 6px;
+    height: 200px;
+}
+
+#submit {
+    font-size: 16px;
+    font-family: 'Lato';
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    height: 35px;
+    border: 3px solid #D3B94E;
+}
+
+#contact-info {
+    margin-left: 40px;
+    margin-top: 70px;
+    padding-bottom: 40px;
+}
+
+#contact-info > h1 {
+    font: 24px Lato;
+    text-align: left;
+    letter-spacing: 0;
+    color: #D3B749;
+    margin-bottom: 16px;
+}
+
+#contact-info > p {
+    text-align: left;
+    font: 16px Lato;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-right: 65px;
+}
+
+
+
+footer {
+    margin-top: 20px;
+}
+
+#social-media-icons > ul {
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social > img {
+    height: 56px;
+    width: 56px;
+}
+
+.social > img:hover {
+    box-shadow: 1px 1px 3px black;
+    height: 58px;
+    width: 58px;
+    transition: 0.1s;
+}
+
+.social > img:active {
+    box-shadow: 0px 0px black;
+    height: 56px;
+    width: 56px;
+    transition: 0.1s;
+}
+
+@media (min-width:768px) {
+
+    #ham_icon {
+        margin-right: 50px;
+    }
+
+    .hamburger-menu-item {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    #hamburger-menu {
+        margin-top: 45px;
+        margin-left: 70%;
+        height: 100%;
+    }
+
+    #social-media-icons > ul {
+        justify-content: center;
+    }
+}
+
+
+@media (min-width:1024px) {
+    #ham-icon {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #logodiv {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    #logo {
+        margin-left: 0px;
+        width: 160px;
+        height: 160px;
+    }
+
+    #menu {
+        display: contents;
+    }
+
+    #menu > ul {
+        padding-left: 0px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background-color: #22304f;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    #menu > ul > li {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        color: white;
+    }
+
+    #contact-head {
+        font-size: 26px;
+        padding-top: 60px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-input > p {
+        font-size: 20px;
+    }
+
+    #textarea-head {
+        margin-top: 20px;
+        margin-right: 65px;
+    }
+
+    input,
+    textarea,
+    button {
+        width:80%;
+        height: 45px;
+        margin-left: 40px;
+        margin-bottom: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 18px;
+    }
+
+
+    textarea {
+        padding-top: 6px;
+        height: 200px;
+    }
+
+    #submit {
+        margin-top: 15px;
+        font-size: 26px;
+        font-family: 'Lato';
+        width: 81%;
+        height: 60px;
+        background: transparent;
+        color: white;
+    }
+
+    textarea {
+        height: 330px;
+    }
+
+    #contact-background {
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    #contact-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*
+    .form-input > input {
+        width:60%;
+    }
+*/
+
+    #contact-info {
+        margin-left: 40px;
+        margin-top: 135px;
+        padding-bottom: 60px;
+    }
+
+    #contact-info > h1 {
+        font: 36px Lato;
+        text-align: left;
+        letter-spacing: 0;
+        color: #D3B749;
+        margin-bottom: 36px;
+    }
+
+    #contact-info > p {
+        text-align: left;
+        font: 24px Lato;
+        line-height: 2;
+        color: #FFFFFF;
+    }
+
+    #menu > ul {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    #footer-contact > h1 {
+        font-size: 36px;
+    }
+
+
+}
+
+
+@media (min-width:1200px) {
+
+    #logo {
+        margin-top: 10px;
+        width: 180px;
+        height: 180px;
+    }
+
+
+    #banner > h1 {
+        height: 80px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        font-size: 36px;
+    }
+
+    .image-overlayed {
+        width: 700px;
+        height: 450px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(3, 320px);
+    }
+
+    .image {
+        width: 320px;
+        height: 320px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+    }
+
+    .image_title {
+        font-size: 12pt;
+    }
+
+}

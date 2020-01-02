@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Maryam's Artboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+
+<body>
+    <div id="overlay-menu" onClick="overlayOff()">
+        <nav id="hamburger-menu" role="menu">
+            <ul>
+                <li class="hamburger-menu-item"><a href="index.html" class="home">Home</a></li>
+                <li class="hamburger-menu-item"><a href="work.html" class="work">Work</a></li>
+                <li class="hamburger-menu-item"><a href="about.html" class="about">About</a></li>
+                <li class="hamburger-menu-item"><a href="services.html" class="services">Services</a></li>
+                <li class="hamburger-menu-item"><a href="contact.html" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header id="header" role="heading">
+        <div id="logodiv">
+            <img id="logo" src="images/logo.png" label="logo" alt="logo">
+            <img id="ham-icon" src="images/nav.png" label="menu" alt="menu" tabindex="0">
+        </div>
+        <nav id="menu" role="menu">
+            <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="work.html" class="work">Work</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="services.html" class="services">Services</a></li>
+                <li><a href="contact.html" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contact-background">
+            <h1 id="contact-head">Want to work with us? Do you have questions?</h1>
+            <div id="contact-form">
+                <form>
+                    <div class="form-input">
+                        <p>Your Name</p><br>
+                        <input type="text" name="name"><br>
+                    </div>
+                    <div class="form-input">
+                        <p>Your company name</p><br>
+                        <input type="text" name="company"><br>
+                    </div>
+                    <div class="form-input">
+                        <p>Your E-mail</p><br>
+                        <input type="email" name="email"><br>
+                    </div>
+                    <div class="form-input">
+                        <p>Your number</p><br>
+                        <input type="text" name="number"><br>
+                    </div>
+                    <div class="form-input">
+                        <p id="textarea-head">Please tell us about your main goals and what you want</p><br>
+                        <textarea name="message" rows="10" cols="30">
+                    </textarea><br>
+                    </div>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="contact-info">
+                <h1>Contact us</h1>
+                <p>Call: 613-6682065</p>
+                <p>Email: taba0027@algonquinlive.com</p>
+                <p>Address: 1000 Old Montreal Rd., Ottawa, ON</p>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div id="social-media-icons">
+                <ul>
+                    <li><a class="social" href="https://www.facebook.com/maryam.tabatabaei.50"><img src="images/social-icons/facebook.png" alt="facebook" label="facebook" tabindex="0"></a></li>
+                    <li><a class="social" href="https://www.instagram.com/maryamtabaa/"><img src="images/social-icons/insta.png" alt="instagram" label="instagram" tabindex="0"></a></li>
+                    <li><a class="social" href="https://www.linkedin.com/in/maryam-taba/"><img src="images/social-icons/link.png" alt="linkedin" label="linkedin" tabindex="0"></a></li>
+                    <li><a class="social" href="https://www.pinterest.ca/maryamtaba86/"><img src="images/social-icons/PinLogo.png" alt="pinterest" label="pinterest" tabindex="0"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="contact.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,484 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+#logo {
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 115px;
+    height: 115px;
+    margin-bottom: 10px;
+}
+
+#ham-icon {
+    float: right;
+    margin-top: 80px;
+    margin-right: 30px;
+    width: 38px;
+    height: 23px;
+    cursor: pointer;
+}
+
+#overlay-menu {
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+#hamburger-menu {
+    margin-top: 25px;
+    border-top-left-radius: 25px;
+    background-color: #B99C28;
+    margin-left: 60%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hamburger-menu-item {
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #1F3051;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hamburger-menu-item > a:hover {
+    color: white;
+}
+
+#menu {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B99C28;
+}
+
+#description > p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+#services-header > p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    /*    color: #D3B749;*/
+    text-align: center;
+    margin-bottom: 23px;
+    letter-spacing: 1px;
+}
+
+
+#banner > h1 {
+    height: 45px;
+    background: #1F3051 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #B99C28;
+    color: white;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
+.gallery_item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.image {
+    width: 355px;
+    height: 230px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    filter:brightness(30%);
+    transition: 0.3s;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 4px;
+    transition: font-size 0.3s;
+}
+
+.image:hover {
+    filter: brightness(30%);
+}
+
+
+
+.image-title {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+
+#footer-contact {
+    background-color: aqua;
+    background: transparent url(images/footerpicture/footer-image-small.png) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height: 250px;
+}
+
+#footer-contact > h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+#footer-first-line {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+#footer-contact > button {
+    margin-top: 36px;
+    width: 130px;
+    height: 42px;
+    background: #D3B94E 0% 0% no-repeat padding-box;
+    border: 2px solid #F7F7F7;
+    border-radius: 20px;
+    opacity: 1;
+    font: Bold 16px/30px 'Lato';
+    letter-spacing: 0;
+    color: #1F3051;
+    box-shadow: 1px 1px 3px black;
+}
+
+#footer-contact > button:hover {
+    transition: 0.1s;
+}
+
+#footer-contact > button:active {
+    transition: 0.1s;
+    box-shadow: none;
+}
+
+#social-media-icons > ul {
+    margin-right: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    /*    align-items: center;*/
+    justify-content: space-around;
+}
+
+
+.social > img {
+    height: 56px;
+    width: 56px;
+}
+
+.social > img:hover {
+    box-shadow: 1px 1px 3px black;
+    height: 58px;
+    width: 58px;
+    transition: 0.1s;
+}
+
+.social > img:active {
+    box-shadow: 0px 0px black;
+    height: 56px;
+    width: 56px;
+    transition: 0.1s;
+}
+
+@media (min-width:768px) {
+
+    #ham_icon {
+        margin-right: 50px;
+    }
+
+    .hamburger-menu-item {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+    #hamburger-menu {
+        margin-top: 45px;
+        margin-left: 70%;
+        height: 100%;
+    }
+
+
+    #banner > h1 {
+        height: 45px;
+        font-size: 24px;
+    }
+
+    #description > p {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    #services-header > p {
+        font-size: 18px;
+    }
+
+    #gallery {
+        grid-template-columns: 332px 332px;
+        grid-column-gap: 22px;
+        grid-row-gap: 30px;
+        justify-content: center;
+    }
+
+    .gallery_item {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 332px;
+        height: 281px;
+
+    }
+
+    .image-caption {
+        font-size: 20x;
+    }
+
+
+    .image-overlayed {
+        width: 500px;
+        height: 350px;
+        border: 7px ridge #b99c28;
+    }
+
+    #footer-contact {
+        height: 320px;
+    }
+
+    #footer-contact > h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    #footer-first-line {
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+
+    #footer-contact > button {
+        margin-top: 40px;
+        width: 170px;
+        height: 56px;
+        background: #D3B94E 0% 0% no-repeat padding-box;
+        border: 3px solid #F7F7F7;
+        border-radius: 28px;
+        opacity: 1;
+        font: Bold 18px/32px 'Lato';
+        letter-spacing: 0;
+        color: #1F3051;
+        box-shadow: 1px 1px 3px black;
+    }
+
+    #social-media-icons > ul {
+        justify-content: center;
+    }
+
+
+}
+
+
+
+@media (min-width:1024px) {
+    #ham-icon {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    #logodiv {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    #logo {
+        margin-left: 0px;
+        width: 160px;
+        height: 160px;
+    }
+
+    #menu {
+        display: contents;
+    }
+
+    #menu > ul {
+        padding-left: 0px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background-color: #22304f;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+    #menu > ul > li {
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+        color: white;
+    }
+
+
+    #banner > h1 {
+        color: #B99C68;
+        background: none;
+        font-size: 30px;
+        font-style: bold;
+    }
+
+    #description > p {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        font-size: 20px;
+    }
+    
+    #services-header > p {
+    margin-bottom: 30px;
+}
+
+
+    #gallery {
+        grid-template-columns: 285px 285px 285px;
+        grid-column-gap: 22px;
+        grid-row-gap: 30px;
+        justify-content: center;
+    }
+
+    .gallery_item {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 285px;
+        height: 260px;
+
+    }
+
+    #footer-contact > h1 {
+        font-size: 28px;
+    }
+
+
+    #footer-first-line {
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (min-width:1200px) {
+
+    #logo {
+        margin-top: 10px;
+        width: 180px;
+        height: 180px;
+    }
+
+
+    #banner > h1 {
+        height: 80px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 42px;
+    }
+
+    #description > p {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        font-size: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+
+    #menu > ul {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .image-overlayed {
+        width: 700px;
+        height: 450px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(3, 320px);
+    }
+
+    .image {
+        width: 320px;
+        height: 320px;
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+    }
+
+    .image_title {
+        font-size: 12pt;
+    }
+
+}
